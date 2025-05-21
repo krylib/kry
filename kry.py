@@ -1,19 +1,23 @@
-# kry.py: cryptography library
+"""kry.py - Simple cryptography library
 
-# license: released to public domain / Unlicense / CC0-1.0
+pip install kry
+"""
 
-__version__ = "2025.5.21"
+__version__ = "2025.5.22-rc1"
+__url__ = "https://github.com/krylib/kry"
+__license__ = "Unlicense OR CC0-1.0" # released to public domain
 
 import secrets
 
 def divides(a, b):
-    # Return True if a divides b
+    """Return True if a divides b"""
     return b % a == 0
 
-# FIPS 186-5 B.3 and B.3.1
-# maybe fixme: this would be more readable if python had goto because the spec uses goto
 def is_miller_rabin_probable_prime(w):
-    # Return True if w is a miller rabin probable prime
+    """Return True if w is a miller rabin probable prime
+    
+    Reference: FIPS 186-5 B.3 and B.3.1
+    """
     
     # we choose to perform optional trial division as noted in FIPS 186-5 B.3
     #fixme trial division
