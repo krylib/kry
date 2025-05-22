@@ -1,6 +1,16 @@
 """kry.py - Simple cryptography library
 
 pip install kry
+
+CHANGELOG
+
+2025.5.22
+    Add __url__
+    Add __license__
+
+2025.5.21
+    Add is_miller_rabin_probable_prime
+
 """
 
 __version__ = "2025.5.22-rc1"
