@@ -15,7 +15,7 @@ CHANGELOG
 
 __version__ = "2025.5.22"
 __url__ = "https://github.com/krylib/kry"
-__license__ = "Unlicense OR CC0-1.0" # released to public domain
+__license__ = "Unlicense OR CC0-1.0" # public domain
 
 import secrets
 
